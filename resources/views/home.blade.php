@@ -1,7 +1,7 @@
 @extends('layouts.home')
 @section('content')
     <!-- hero slider -->
-    <section class="hero-section overlay bg-cover" data-background="{{ asset('assets/images/banner-1.jpg') }}">
+    <section class="hero-section overlay bg-cover" data-background="{{ asset('assets/images/ged.jpg') }}">
         <div class="container">
             <div class="hero-slider">
                 <!-- slider item -->
@@ -23,7 +23,7 @@
     </section>
     <!-- /hero slider -->
 
-    <!-- Pengumuman -->
+    {{-- <!-- Pengumuman -->
     <div class="news-updates">
         <div class="container">
             <div class="row">
@@ -33,8 +33,8 @@
                             <h2 class="text-black">Pengumuman</h2>
                             <a href="{{ route('home.pengumuman') }}" class="btn btn-primary-outline">Selengkapnya<i
                                     class="fas fa-angle-double-right mx-2"></i></a>
-                        </div>
-                        @foreach ($pengumuman as $item)
+                        </div> --}}
+                        {{-- @foreach ($pengumuman as $item)
                             <div class="post-entry-big mb-1">
                                 <div class="icon-tanggal me-2">
                                     <div class="meta-date text-center">
@@ -61,30 +61,30 @@
                             </div>
                         @endforeach
                     </div>
-                </div>
-                <div class="col-lg-8 col-md-6">
+                </div> --}}
+                <div class=" section-sm">
                     <div class="card-pengumuman">
                         <div class="section-heading d-flex align-items-center justify-content-between">
-                            <h2 class="text-black">Berita Kampus</h2>
-                            <a href="{{ route('berita') }}" class="btn btn-primary-outline">Selengkapnya<i
+                            <h2 class="mb-0 text-nowrap me-3">Politeknik Negeri Banyuwangi</h2>
+                            <a href="{{ route('event') }}" class="btn btn-primary-outline">Selengkapnya<i
                                     class="fas fa-angle-double-right mx-2"></i></a>
                         </div>
                         <div class="owl-slide-3 owl-carousel">
-                            @foreach ($berita as $item)
+                            @foreach ($event as $item)
                                 <div class="course-1-item">
                                     <figure class="thumnail">
-                                        <a href="{{ route('berita.detail', $item->slug_berita) }}"><img
+                                        <a href="{{ route('event.detail', $item->slug_event) }}"><img
                                                 src="{{ Storage::url($item->gambar) }}" alt="Image"
                                                 class="img-fluid"></a>
                                     </figure>
                                     <div class="course-1-content">
                                         <h2> <a
-                                                href="{{ route('berita.detail', $item->slug_berita) }}">{{ Str::limit($item->judul_berita, 45, '...') }}</a>
+                                                href="{{ route('event.detail', $item->slug_event) }}">{{ Str::limit($item->judul_event, 45, '...') }}</a>
                                         </h2>
                                         <p class="desc">
                                             {!! Str::limit(strip_tags($item->isi), $limit = 50, $end = '...') !!}</p>
                                         <div class="link">
-                                            <a href="{{ route('berita.detail', $item->slug_berita) }}"
+                                            <a href="{{ route('event.detail', $item->slug_event) }}"
                                                 class="btn btn-primary-outline text-center">Baca
                                                 Selanjutnya</a>
                                         </div>
@@ -99,7 +99,7 @@
     </div>
     <!-- /Pengumuman -->
 
-    <!-- Alumni -->
+    {{-- <!-- Alumni -->
     <section class="section-sm ">
         <div class="container" data-aos="fade-up">
             <div class="row">
@@ -138,7 +138,7 @@
             <!-- /course list -->
         </div>
     </section>
-    <!-- /Alumni -->
+    <!-- /Alumni --> --}}
 
     <!-- Video -->
     <section class="section-sm">
@@ -155,14 +155,14 @@
                 <!-- course item -->
                 <div class="col-lg-6 col-md-6 mb-3 position-relative">
 
-                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/tEZbNT1Z0xs?controls=0"
+                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/WkCQrcMp4Rk"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
 
                 </div>
                 <div class="col-lg-6 col-md-6 mb-3 position-relative">
-                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/yNgKENznK_c?controls=0"
+                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/Bi1qU8BMf_g"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>

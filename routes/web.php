@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AlumniController;
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\BeritaController;
+use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\MotivasiController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
@@ -14,6 +15,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\RolesController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Berita;
+use App\Http\Controllers\Event;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\Pendaftaran;
 use App\Http\Controllers\Pengumuman;
@@ -43,8 +45,11 @@ Route::get('event', [HomeController::class, 'event'])->name('event');
 Route::get('pengumuman', [Pengumuman::class, 'index'])->name('home.pengumuman');
 Route::get('pengumuman/{slug_pengumuman}', [Pengumuman::class, 'show'])->name('pengumuman.detail');
 
-Route::get('berita', [Berita::class, 'index'])->name('berita');
-Route::get('berita/{slug_berita}', [Berita::class, 'show'])->name('berita.detail');
+// Route::get('berita', [Berita::class, 'index'])->name('berita');
+// Route::get('berita/{slug_berita}', [Berita::class, 'show'])->name('berita.detail');
+
+Route::get('event', [Event::class, 'index'])->name('event');
+Route::get('event/{slug_event}', [Event::class, 'show'])->name('event.detail');
 
 Route::get('blog', [BlogController::class, 'index'])->name('blog');
 Route::get('blog/{slug}', [BlogController::class, 'show'])->name('blog.detail');
@@ -107,6 +112,14 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::post('admin/berita/store', [BeritaController::class, 'store'])->name('berita.store');
     Route::delete('admin/berita/destroy/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
     Route::get('admin/berita/{id}', [BeritaController::class, 'show'])->name('berita.show');
+
+       // Event
+    // Route::resource('admin/event', 'EventController');
+    Route::get('admin/event', [EventController::class, 'index'])->name('event.index');
+    Route::get('admin/event/create', [EventController::class, 'create'])->name('event.create');
+    Route::post('admin/event/store', [EventController::class, 'store'])->name('event.store');
+    Route::delete('admin/event/destroy/{id}', [EventController::class, 'destroy'])->name('event.destroy');
+    Route::get('admin/event/{id}', [EventController::class, 'show'])->name('event.show');
 
     // Alumni
     Route::get('admin/alumni', [AlumniController::class, 'index'])->name('alumni.index');

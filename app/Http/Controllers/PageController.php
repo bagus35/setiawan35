@@ -14,9 +14,13 @@ class PageController extends Controller
     {
         return view('home');
     }
-    public function berita()
+    // public function berita()
+    // {
+    //     return view('pages.berita_kampus');
+    // }
+    public function event()
     {
-        return view('pages.berita_kampus');
+        return view('pages.event_kampus');
     }
     public function sejarah()
     {

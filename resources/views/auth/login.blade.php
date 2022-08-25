@@ -4,12 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AMIK Medicom | Login</title>
+    <title>Teknik Informatika | Login</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
-    <!-- Ionicons -->
+    <link rel="shrotcut icon" href="{{ url('assets/images/poliwangi.png') }}">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
@@ -19,17 +18,17 @@
 
 
 <body class="hold-transition login-page">
-    <div class="login-box">
-        <div class="login-logo p-3">
+    <div class="login-box " style="background-color:rgb(190, 186, 186)"">
+        <div class="login-logo p-3 bg-dark">
             <a href="{{ '/' }}">
-                <img src="{{ asset('assets/images/logo-top-1.png') }}" class="img img-responsive"
+                <img src="{{ asset('assets/images/TI.png') }}" class="img img-responsive"
                     style="width: auto; max-width: 80%;">
             </a>
         </div>
         <div class="form-login">
             <div class="login-card-body">
                 <div class="text-center">
-                    <p class="login-box-msg mb-3">Login into your Account</p>
+                    <p class="login-box-msg mb-6 ">Login into your Account</p>
                 </div>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
@@ -66,7 +65,7 @@
                     </div>
                     <div class="row justify-content-center mt-5">
                         <!-- /.col -->
-                        <button type="submit" class="btn btn-login"> Log In</button>
+                        <button type="submit" class="btn btn-light bg-dark text-black"> Log In</button>
                         <!-- /.col -->
                     </div>
                 </form>

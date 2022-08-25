@@ -1,16 +1,16 @@
 <!-- navbar -->
-<div class="navigation w-100">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+<div class="navigation w-100 " >
+    <nav class="navbar navbar-expand-lg navbar-light  "style="background-color: rgb(190, 186, 186)">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}"> <i class="fas fa-home"></i> </a>
+            <a class="navbar-brand" href="{{ url('/') }}"> <i class="fas fa-home" style="color: gray"></i> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item  dropdown" id="profile">
-                        <a class="nav-link  dropdown-toggle" href="#" id="menu_sejarah" role="button"
+                    <li class="nav-item  dropdown" id="profile" >
+                        <a class="nav-link  dropdown-toggle" href="#" id="menu_sejarah" role="button "
                             data-bs-toggle="dropdown" aria-expanded="false">TENTANG KAMI
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -71,7 +71,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">MAHASISWA
                         </a>
@@ -82,7 +82,7 @@
                                 <a class="dropdown-item" href="#">Prestasi Mahasiswa</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">PANDUAN TA/MAGANG
@@ -95,7 +95,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">PENDAFTARAN</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -108,7 +108,7 @@
                                     Pendidikan</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
 
                     <li class="nav-item" id="event">
                         <a class="nav-link" href="{{ route('event') }}">EVENT</a>
@@ -116,7 +116,31 @@
                     <li class="nav-item">
                         <a class="nav-link" id="kontak" href="{{ route('kontak') }}">KONTAK</a>
                     </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" id="login" style="color: rgb(211, 200, 200)" href="{{ route('login') }}">LOGIN</a>
+                    <style>
+                        #login{
+                            background-color: gray;  
+                            padding-right   : 20px;  
+                            padding-left    : 20px;    
+                            
+
+                        }
+                    </style>
+                    </li>
                 </ul>
+                {{-- <div class="col-lg-4 mb-2 col-sm-12 d-flex justify-content-right text-sm-right text-lg-end">
+                    <a class="login"href="{{ route('login') }}" class="btn-login my-auto bg-transparent "><span
+                            class="fas fa-users mx-1"></span> Login</a>
+
+                        <style>
+                            .login{
+                                color: aliceblue
+                            }
+                            </style> 
+                </div> --}}
+            </div>
+        </div>
             </div>
         </div>
     </nav>

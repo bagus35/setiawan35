@@ -35,15 +35,12 @@
                                 <p> Dashboard</p>
                             </a>
                         </li>
-                        @can('banner_access')
                             <li class="nav-item">
                                 <a href="{{ route('banner.index') }}" class="nav-link" id="banner">
                                     <i class="nav-icon far fa-image"></i>
                                     <p> Banner </p>
                                 </a>
                             </li>
-                        @endcan
-                        @can('pengumuman_access')
                             <li class="nav-item">
                                 <a href="{{ route('pengumuman') }}" class="nav-link" id="pengumuman">
                                     <i class="nav-icon fas fa-th"></i>
@@ -53,33 +50,34 @@
                                     </p>
                                 </a>
                             </li>
-                        @endcan
-                        @can('berita_access')
                             <li class="nav-item">
                                 <a href="{{ route('berita.index') }}" class="nav-link" id="berita">
                                     <i class="nav-icon fas fa-file"></i>
                                     <p> Berita & Artikel </p>
                                 </a>
                             </li>
-                        @endcan
 
-                        @can('alumni_access')
+                            <li class="nav-item">
+                                <a href="{{ route('event.index') }}" class="nav-link" id="event">
+                                    <i class="nav-icon fas fa-file"></i>
+                                    <p> event </p>
+                                </a>
+                            </li>
+
                             <li class="nav-item">
                                 <a href="{{ route('alumni.index') }}" class="nav-link" id="Alumni">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p> Alumni </p>
                                 </a>
                             </li>
-                        @endcan
-                        @can('staff_access')
+
                             <li class="nav-item">
                                 <a href="{{ route('staff.index') }}" class="nav-link" id="Staff">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p> Staff </p>
                                 </a>
                             </li>
-                        @endcan
-                        @can('motivasi_access')
+
                             <li class="nav-item">
                                 <a href="{{ route('motivasi.index') }}"
                                     class="nav-link {{ request()->is('admin/motivasi') || request()->is('admin/motivasi/*') ? 'active' : '' }} ">
@@ -87,9 +85,7 @@
                                     <p> Motivasi </p>
                                 </a>
                             </li>
-                        @endcan
 
-                        @can('user_management_access')
                             <li class="nav-item has-treeview" id="mastermanagement">
                                 <a href="#" class="nav-link" id="usermanagement">
                                     <i class="nav-icon fas fa-users"></i>
@@ -129,7 +125,6 @@
                                 </ul>
                                 {{-- @endcan --}}
                             </li>
-                        @endcan
                         {{-- @endif --}}
                     </ul>
                 </nav>
