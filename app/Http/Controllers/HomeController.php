@@ -63,9 +63,10 @@ class HomeController extends Controller
         $alumni = Alumni_Model::orderBy('id_alumni', 'desc')->paginate(8);;
         return view('pages.testimoni_alumni', compact('alumni'));
     }
-    public function fasilitas()
+    public function event()
     {
 
-        return view('pages.fasilitas');
+        return view('pages.event');
     }
+
 }

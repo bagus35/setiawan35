@@ -1,8 +1,8 @@
 @extends('layouts.index')
-@section('heading', 'Fasilitas Belajar poliwangicom')
+@section('heading', 'Teknik Informatika')
 
 @section('page')
-    <span class="current">Fasilitas</span>
+    <span class="current">event</span>
 @endsection
 
 @section('content')

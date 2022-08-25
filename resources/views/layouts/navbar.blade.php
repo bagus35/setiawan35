@@ -11,13 +11,12 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item  dropdown" id="profile">
                         <a class="nav-link  dropdown-toggle" href="#" id="menu_sejarah" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">PROFILE
+                            data-bs-toggle="dropdown" aria-expanded="false">TENTANG KAMI
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ route('sejarah') }}" id="sejarah">Sejarah</a></li>
                             <li>
-                                <a class="dropdown-item" href="{{ route('sambutan_direktur') }}">Sambutan
-                                    Direktur</a>
+                                <a class="dropdown-item" href="{{ route('sambutan_direktur') }}">Struktur Organisasi</a>
                             </li>
                             <li><a class="dropdown-item" href="{{ route('visi_misi') }}">Visi Misi Moto</a></li>
                             <li>
@@ -111,8 +110,8 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item" id="fasilitas">
-                        <a class="nav-link" href="{{ route('fasilitas') }}">FASILITAS</a>
+                    <li class="nav-item" id="event">
+                        <a class="nav-link" href="{{ route('event') }}">EVENT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="kontak" href="{{ route('kontak') }}">KONTAK</a>

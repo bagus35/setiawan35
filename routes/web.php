@@ -38,7 +38,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('alumni', [HomeController::class, 'testimoni'])->name('alumni');
 
-Route::get('fasilitas', [HomeController::class, 'fasilitas'])->name('fasilitas');
+Route::get('event', [HomeController::class, 'event'])->name('event');
 
 Route::get('pengumuman', [Pengumuman::class, 'index'])->name('home.pengumuman');
 Route::get('pengumuman/{slug_pengumuman}', [Pengumuman::class, 'show'])->name('pengumuman.detail');
