@@ -45,11 +45,11 @@
                 <h4>Program Studi</h4>
                 <hr>
                 <ul class="list-unstyled list-text">
-                    <li><i class="fas fa-angle-right"></i><a href=""><i class="icon-check"></i>
+                    <li><i class="fas fa-angle-right"></i><a href="#"><i class="icon-check"></i>
                             Teknologi Rekayasa Perangkat Lunak</a></li>
-                    <li><i class="fas fa-angle-right"></i><a href=""><i class="icon-check"></i> Teknologi Rekayasa Perangkat Keras</a>
+                    <li><i class="fas fa-angle-right"></i><a href="#"><i class="icon-check"></i> Teknologi Rekayasa Perangkat Komputer</a>
                     </li>
-                    <li><i class="fas fa-angle-right"></i><a href=""><i class="icon-check"></i>
+                    <li><i class="fas fa-angle-right"></i><a href="#"><i class="icon-check"></i>
                             Bisnis Digital</a></li>
                 </ul>
             </div>

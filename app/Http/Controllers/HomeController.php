@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Alumni_Model;
+use App\Models\Magang_Model;
+use App\Models\Kalender_Model;
+use App\Models\Teknisi;
+use App\Models\Fasilitas;
 use App\Models\Banner;
 use App\Models\Event_Model;
 use App\Models\Home;
@@ -26,9 +30,10 @@ class HomeController extends Controller
         $banner = Banner::orderBy('id_banner', 'desc')->take(3)->get();
         $event = Event_Model::orderBy('id', 'desc')->take(4)->get();
         $alumni = Alumni_Model::orderBy('id_alumni', 'desc')->take(5)->get();
+        $magang = Magang_Model::orderBy('id_magang', 'desc')->take(6)->get();
         $pengumuman = $Mpengumuman->get_pengemumuman();
         $data = [
-            'nama_kampus' => 'AMIK Medicom',
+            'nama_kampus' => 'Politeknik Negri Banyuwangi',
             // 'pengumuman'  => $get_pengumuman,
             'banner'        => $banner,
             'Str'   => Str::class,
@@ -63,10 +68,28 @@ class HomeController extends Controller
         $alumni = Alumni_Model::orderBy('id_alumni', 'desc')->paginate(8);;
         return view('pages.testimoni_alumni', compact('alumni'));
     }
-    public function event()
+    
+    public function magang()
     {
-
-        return view('pages.event');
+        $magang = Magang_Model::orderBy('id_magang', 'desc')->paginate(9);;
+        return view('pages.kerjasama_magang', compact('magang'));
     }
 
+    public function kerjasama_magang()
+    {
+        $magang = Magang_Model::orderBy('id_magang', 'desc')->paginate(9);;
+        return view('pages.kerjasama_magang', compact('magang'));
+    }
+
+    public function teknisi()
+    {
+        $teknisi=Teknisi::all();
+        return view('pages.teknisi', compact('teknisi'));
+    }
+    public function fasilitas()
+    {
+        $fasilitas=Fasilitas::all();
+        return view('pages.fasilitas', compact('fasilitas'));
+    }
+    
 }

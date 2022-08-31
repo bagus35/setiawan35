@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('heading', 'Visi, Misi Institusi Akademi Informatika Dan Komputer Medicom')
+@section('heading', 'Visi, Misi Politeknik Negri Banyuwangi')
 @section('page')
     <span>Profile</span>
     <span class="mx-3 fas fa-angle-right"></span>
@@ -15,31 +15,21 @@
                     <div class="card-title about__text mb-4">
                         <div class="section-title pb-4">
                             <h4 class="text-center">VISI</h4>
-                            <p> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>></p>
+                            <p> VISI
+                                Visi Politeknik Negeri Banyuwangi adalah :
+                                Menjadi Lembaga Pendidikan Tinggi vokasional yang bermutu, berkemampuan ilmu pengetahuan dan teknologi, inovatif, dan berdaya saing.
+                                </p>
                         </div>
 
                         <div class="section-title pb-4">
                             <h4 class="text-center">MISI</h4>
 
-                            <ol>
-                                <li> satu.</li>
-                                <li> dua</li>
-                                <li> tiga</li>
-                                <li> empat</li>
-                                <li> lima</li>
-                            </ol>
+                            <p>Menyelenggarakan pendidikan yang bermutu sesuai standar nasional pendidikan tinggi untuk menghasilkan lulusan yang kompeten dan profesional;
+                                Melaksanakan penelitian terapan dan pengabdian kepada masyarakat dalam rangka meningkatkan kualitas Sivitas Akademika sesuai dengan permasalahan industri dan masyarakat.
+                                Meningkatkan akses, relevansi, kemampuan ilmu pengetahuan dan teknologi dan invoasi untuk sumber daya manusia yang berkualitas.</p>
                         </div>
 
-                        <div class="section-title pb-4">
-                            <h4 class="text-center">TUJUAN</h4>
-                            <ol>
-                                <li> >>>>>>>>>>>>></li>
-                                <li> >>>>>>>>>>>>></li>
-                                <li>>>>>>>>>>>>>>>>></li></li>
-                                <li>>>>>>>>>>>>>>>>>></li>
-                                <li> >>>>>>>>>>>>>>>>>>> </li>
-                            </ol>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

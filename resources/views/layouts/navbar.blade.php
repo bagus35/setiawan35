@@ -15,15 +15,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ route('sejarah') }}" id="sejarah">Sejarah</a></li>
-                            <li>
-                                <a class="dropdown-item" href="{{ route('sambutan_direktur') }}">Struktur Organisasi</a>
-                            </li>
                             <li><a class="dropdown-item" href="{{ route('visi_misi') }}">Visi Misi Moto</a></li>
-                            <li>
-                                <a class="dropdown-item" href="{{ route('sasaran_kebijakan') }}">Sasaran Dan
-                                    Kebijakan
-                                    Mutu</a>
-                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -31,13 +23,12 @@
                             data-bs-toggle="dropdown" aria-expanded="false">ORGANISASI
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ route('pimpinan') }}">Pimpinan</a></li>
+                            <li><a class="dropdown-item" href="{{ route('dosen') }}">Dosen</a></li>
                             <li>
-                                <a class="dropdown-item" href="{{ route('dosen') }}">Dosen</a>
+                               <a class="dropdown-item" href="{{ route('teknisi') }}">Teknisi</a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Bagan</a></li>
                         </ul>
-                    </li>
+
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -51,23 +42,20 @@
                                 </a>
                                 <ul class="dropdown-submenu1" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <a class="dropdown-item" href="{{ route('prodi_mi') }}">Manajemen
-                                            Informatika</a>
+                                        <a class="dropdown-item" href="#">D4-TRPL</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="{{ route('prodi_tk') }}">Teknik Komputer</a>
+                                        <a class="dropdown-item" href="{{ route('prodi_tk') }}">D4-Teknik Rekayasa Komputer</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="{{ route('prodi_ka') }}">Komputerisasi
-                                            Akutansi</a>
+                                        <a class="dropdown-item" href="{{ route('prodi_ka') }}">D4-Bisnis Digital</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="{{ route('kurikulum') }}">Kurikulim</a>
+                                <a class="dropdown-item" href="{{ route('kalender_akademik') }}">Kalender Akademik</a>
                             </li>
-                            <li><a class="dropdown-item" href="{{ route('peraturan_akademi') }}">Peraturan
-                                    Akademi</a>
+                            <li><a class="dropdown-item" href="{{ route('fasilitas') }}">Fasilitas</a>
                             </li>
                         </ul>
                     </li>
@@ -83,32 +71,10 @@
                             </li>
                         </ul>
                     </li> --}}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">PANDUAN TA/MAGANG
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">PPM dan Magang</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">DAFTAR JUDUL TA 2017-2018</a>
-                            </li>
-                        </ul>
                     </li>
-
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">PENDAFTARAN</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="{{ route('info_pendaftaran') }}">Informasi
-                                    Pendaftaran</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="{{ route('biaya_pendidikan') }}">Biaya
-                                    Pendidikan</a>
-                            </li>
-                        </ul>
-                    </li> --}}
+                    <li class="nav-item" id="magang">
+                        <a class="nav-link" href="{{ route('kerjasama_magang') }}">Magang</a>
+                    </li>
 
                     <li class="nav-item" id="event">
                         <a class="nav-link" href="{{ route('event') }}">EVENT</a>
@@ -126,7 +92,7 @@
                             
 
                         }
-                    </style>
+                    </style>   
                     </li>
                 </ul>
                 {{-- <div class="col-lg-4 mb-2 col-sm-12 d-flex justify-content-right text-sm-right text-lg-end">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pendaftaran_model;
+use App\Models\Kalender_Model;
 use App\Models\Staff_Model;
 use Illuminate\Http\Request;
 
@@ -67,6 +68,12 @@ class PageController extends Controller
         return view('pages.prodi_tk');
     }
 
+    public function kalender_akademik()
+    {
+        $kalender = Kalender_Model::all();
+        return view('pages.kalender_akademik',compact('kalender'));
+    }
+
     public function kurikulum()
     {
         return view('pages.kurikulum');
@@ -95,7 +102,7 @@ class PageController extends Controller
     public function login()
     {
         $data = [
-            'title' => 'Amik Medicom',
+            'title' => 'Politeknik Negri Banyuwangi',
         ];
         return view('auth.login', $data);
     }

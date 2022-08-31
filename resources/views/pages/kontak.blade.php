@@ -16,22 +16,12 @@
                                 <h5>Kontak Informasi</h5>
                                 <ul>
                                     <li>
-                                        <h6><i class="fa fa-map-marker"></i> Kampus 1</h6>
-                                        <p>Jalan Darat No. 74 Medan - (061) 4152616</p>
-                                    </li>
-                                    <li>
-                                        <h6><i class="fa fa-map-marker"></i> Kampus 2</h6>
-                                        <p>Jalan Prof. H.M. Yamin No. 508-510 Medan - (061) 4557494</p>
-                                    </li>
-                                    <li>
-                                        <h6><i class="fa fa-phone"></i> Phone</h6>
-                                        <p><span>Kamson Sirait</span><span>0821-6812-7949</span></p>
-                                        <p><span>Rizky Habibi</span><span>0821-6550-3420</span></p>
-
+                                        <h6><i class="fa fa-map-marker"></i> Politeknik Negri Banyuwangi</h6>
+                                        <p>jalan Raya Jember No.KM13, Kawang, Labanasem, Kec. Kabat, Kabupaten Banyuwangi, Jawa Timur 68461</p>
                                     </li>
                                     <li>
                                         <h6><i class="fa fa-envelope"></i>Email Kampus</h6>
-                                        <p>sahabatmedicom@gmail.com</p>
+                                        <p>poliwangi.ac.id</p>
                                     </li>
                                 </ul>
                             </div>
@@ -50,7 +40,7 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="contact__map">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48158.305462977965!2d-74.13283844036356!3d41.02757295168286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e440473470d7%3A0xcaf503ca2ee57958!2sSaddle%20River%2C%20NJ%2007458%2C%20USA!5e0!3m2!1sen!2sbd!4v1575917275626!5m2!1sen!2sbd"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.0865606193206!2d114.30477261486625!3d-8.294184494032656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd156d7d86bef9b%3A0x4cb09a70b9109740!2sPoliteknik%20Negeri%20Banyuwangi!5e0!3m2!1sid!2sid!4v1661860339838!5m2!1sid!2sid"
                                 height="780" style="border:0" allowfullscreen="">
                             </iframe>
                         </div>

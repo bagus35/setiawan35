@@ -2,9 +2,9 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="index3.html" class="brand-link">
-                <img src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
+                <img src="{{ asset('assets/images/poliwangi.png') }}" alt="Politeknik Negri Banyuwangi"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light"> AMIK Medicom</span>
+                <span class="brand-text font-weight-light"> Informatika</span>
             </a>
 
             <!-- Sidebar -->
@@ -41,22 +41,8 @@
                                     <p> Banner </p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="{{ route('pengumuman') }}" class="nav-link" id="pengumuman">
-                                    <i class="nav-icon fas fa-th"></i>
-                                    <p>
-                                        Pengumuman
-                                        <span class="right badge badge-danger">New</span>
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ route('berita.index') }}" class="nav-link" id="berita">
-                                    <i class="nav-icon fas fa-file"></i>
-                                    <p> Berita & Artikel </p>
-                                </a>
-                            </li>
-
+                           
+                         
                             <li class="nav-item">
                                 <a href="{{ route('event.index') }}" class="nav-link" id="event">
                                     <i class="nav-icon fas fa-file"></i>
@@ -64,10 +50,18 @@
                                 </a>
                             </li>
 
+                       
                             <li class="nav-item">
-                                <a href="{{ route('alumni.index') }}" class="nav-link" id="Alumni">
+                                <a href="{{ route('kalender_akademik.index') }}" class="nav-link" id="Kalender">
                                     <i class="nav-icon fas fa-users"></i>
-                                    <p> Alumni </p>
+                                    <p> Kalender Akademik </p>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{ route('magang.index') }}" class="nav-link" id="Magang">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p> Kerjasama & Magang </p>
                                 </a>
                             </li>
 
@@ -77,12 +71,17 @@
                                     <p> Staff </p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{ route('teknisi.index') }}" class="nav-link" id="Teknisi">
+                                    <i class="nav-icon fas fa-user"></i>
+                                    <p> Teknisi </p>
+                                </a>
+                            </li>
 
                             <li class="nav-item">
-                                <a href="{{ route('motivasi.index') }}"
-                                    class="nav-link {{ request()->is('admin/motivasi') || request()->is('admin/motivasi/*') ? 'active' : '' }} ">
-                                    <i class="nav-icon fas fa-quote-left"></i>
-                                    <p> Motivasi </p>
+                                <a href="{{ route('fasilitas.index') }}" class="nav-link" id="Fasilitas">
+                                    <i class="nav-icon fas fa-user"></i>
+                                    <p> Fasilitas </p>
                                 </a>
                             </li>
 

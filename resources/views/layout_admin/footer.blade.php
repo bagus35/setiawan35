@@ -3,7 +3,7 @@
         <p class="text-start">
             <script>
                 document.write(new Date().getFullYear());
-            </script> AMIK Medicom
+            </script> Politeknik Negeri Banyuwangi
         </p>
     </div>
     <script script src="{{ url('plugins/jquery/jquery.min.js') }}">

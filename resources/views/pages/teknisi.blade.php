@@ -1,9 +1,9 @@
 @extends('layouts.index')
-@section('heading', 'Dosen')
+@section('heading', 'Teknisi dan Admin')
 @section('page')
     <a href="" class="">Organisasi</a>
     <span class="mx-3 fas fa-angle-right"></span>
-    <span class="current">Dosen</span>
+    <span class="current">Teknisi</span>
 @endsection
 @section('content')
 
@@ -13,12 +13,12 @@
             <div class="container">
                 <div class="row">
                     <div class="section_title_container text-center">
-                        <h2 class="section_title">Dosen</h2>
+                        <h2 class="section_title">Teknisi dan Admin</h2>
                     </div>
                 </div>
                 <div class="row team_row justify-content-center">
                     <!-- Team Item -->
-                    @foreach ($dosen as $item)
+                    @foreach ($teknisi as $item)
                         <div class="col-lg-3 col-md-6 team_col">
                             <div class="team_item">
                                 <div class="team_image"><img src="{{ Storage::url($item->gambar) }}" alt="">

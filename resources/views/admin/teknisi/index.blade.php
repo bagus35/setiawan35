@@ -1,8 +1,8 @@
 @extends('layout_admin.template')
-@section('heading', 'Staff')
+@section('heading', 'Teknisi')
 
 @section('page')
-    <li class="breadcrumb-item active">Staff </li>
+    <li class="breadcrumb-item active">Teknisi</li>
 @endsection
 @section('content')
     <!-- Main content -->
@@ -15,7 +15,7 @@
                             <h3 class="card-title">
                                 <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
                                     data-target=".bd-example-modal-lg">
-                                    <i class="nav-icon fas fa-folder-plus"></i> &nbsp; Tambah Data Staff
+                                    <i class="nav-icon fas fa-folder-plus"></i> &nbsp; Tambah Data Teknisi
                                 </button>
                             </h3>
                         </div>
@@ -26,26 +26,26 @@
                                     <tr>
                                         <th width="5%">No.</th>
                                         <th>Gambar</th>
-                                        <th width="20%">Nama Staff</th>
+                                        <th width="20%">Nama Teknisi</th>
                                         <th width="40%">Jabatan</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($staff as $data)
+                                    @foreach ($teknisi as $data)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
                                             <td> <img src="{{ Storage::url($data->gambar) }}" width="80px"
                                                     class="img-thumbnail">
-                                            <td>{{ $data->nama_staff }}</td>
+                                            <td>{{ $data->nama_teknisi }}</td>
                                             <td>{{ $data->jabatan }}</td>
                                             </td>
                                             <td>
-                                                <form action="{{ route('staff.destroy', $data->id_staff) }}"
+                                                <form action="{{ route('teknisi.destroy', $data->id_teknisi) }}"
                                                     method="post">
                                                     @csrf
                                                     @method('delete')
-                                                    <a href="{{ route('banner.edit', Crypt::encrypt($data->id_staff)) }}"
+                                                    <a href="{{ route('banner.edit', Crypt::encrypt($data->id_teknisi)) }}"
                                                         class="btn btn-success btn-sm"><i class="nav-icon fas fa-edit"></i>
                                                         &nbsp; Edit</a>
 
@@ -74,13 +74,13 @@
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Tambah Data Staff</h4>
+                    <h4 class="modal-title">Tambah Data Teknisi</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="{{ route('staff.store') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('teknisi.store') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="card-body">
                             <div class="form-group">
@@ -100,7 +100,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="nama">Nama Staff</label>
+                                <label for="nama">Nama Teknisi</label>
                                 <input type="text" name="nama" value="{{ old('nama') }}"
                                     class="form-control @error('nama') is-invalid @enderror"
                                     placeholder="Ramson Rajagukguk, A.Md">
@@ -118,12 +118,12 @@
                                     <option value="direktur" @if (old('jabatan') == 'direktur') {{ 'selected' }} @endif>
                                         Direktur</option>
                                         <option value="Kepala Jurusan TI">Kepala Jurusan TI</option>
-                                        <option value="Kaprodi TRPL">Kaprodi TRPL</option>
-                                        <option value="Kaprodi Teknik Rekayasa Komputer">Kaprodi Teknik Rekayasa Komputer</option>
-                                        <option value="Kaprodi Bisnis Digital">Kaprodi Bisnis Digital</option>
-                                        <option value="Dosen">Dosen</option>
-                                        <option value="Admin">Admin</option>
-                                        <option value="Teknisi">Teknisi</option>
+                                    <option value="Kaprodi TRPL">Kaprodi TRPL</option>
+                                    <option value="Kaprodi Teknik Rekayasa Komputer">Kaprodi Teknik Rekayasa Komputer</option>
+                                    <option value="Kaprodi Bisnis Digital">Kaprodi Bisnis Digital</option>
+                                    <option value="Dosen">Dosen</option>
+                                    <option value="Admin">Admin</option>
+                                    <option value="Teknisi">Teknisi</option>
                                 </select>
                                 <div class="text-danger">
                                     @error('jabatan')
@@ -152,7 +152,7 @@
             bsCustomFileInput.init();
         });
 
-        $("#Staff").addClass("active");
+        $("#Teknisi").addClass("active");
     </script>
 
 @endsection
