@@ -35,13 +35,6 @@
                                 <p> Dashboard</p>
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a href="{{ route('banner.index') }}" class="nav-link" id="banner">
-                                    <i class="nav-icon far fa-image"></i>
-                                    <p> Banner </p>
-                                </a>
-                            </li>
-                           
                          
                             <li class="nav-item">
                                 <a href="{{ route('event.index') }}" class="nav-link" id="event">
@@ -50,13 +43,6 @@
                                 </a>
                             </li>
 
-                       
-                            <li class="nav-item">
-                                <a href="{{ route('kalender_akademik.index') }}" class="nav-link" id="Kalender">
-                                    <i class="nav-icon fas fa-users"></i>
-                                    <p> Kalender Akademik </p>
-                                </a>
-                            </li>
 
                             <li class="nav-item">
                                 <a href="{{ route('magang.index') }}" class="nav-link" id="Magang">
@@ -75,13 +61,6 @@
                                 <a href="{{ route('teknisi.index') }}" class="nav-link" id="Teknisi">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p> Teknisi </p>
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="{{ route('fasilitas.index') }}" class="nav-link" id="Fasilitas">
-                                    <i class="nav-icon fas fa-user"></i>
-                                    <p> Fasilitas </p>
                                 </a>
                             </li>
 

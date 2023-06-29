@@ -52,11 +52,6 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li>
-                                <a class="dropdown-item" href="{{ route('kalender_akademik') }}">Kalender Akademik</a>
-                            </li>
-                            <li><a class="dropdown-item" href="{{ route('fasilitas') }}">Fasilitas</a>
-                            </li>
                         </ul>
                     </li>
                     {{-- <li class="nav-item dropdown">

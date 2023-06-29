@@ -5,18 +5,6 @@
         <div class="container">
             <div class="hero-slider">
                 <!-- slider item -->
-                @foreach ($banner as $item)
-                    <div class="hero-slider-item" data-background="{{ Storage::url($item->gambar_banner) }}">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h1 class="title-slider text-white" data-animation-out="fadeOutRight" data-delay-out="5"
-                                    data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">
-                                    {{ $item->keterangan }}
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
                 <!-- slider item -->
             </div>
         </div>
@@ -99,46 +87,12 @@
     </div>
     <!-- /Pengumuman -->
 
-    {{-- <!-- Alumni -->
-    <section class="section-sm ">
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex align-items-center section-title justify-content-between">
-                        <h2 class="mb-0 text-nowrap me-3">Testimonial Alumni</h2>
-                        <div class="border-top w-50 border-primary d-none d-md-block d-sm-block"></div>
-                        <a href="{{ route('alumni') }}" class="btn btn-primary-outline">Lihat Semua</a>
-                    </div>
-                </div>
-            </div>
-            <!-- course list -->
-            <div class="row justify-content-center">
-                <!-- course item -->
-                @foreach ($alumni as $item)
-                    <div class="testimoni-alumni hover-shadow" data-aos="fade-up">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img"
-                                style="background-image: url({{ Storage::url($item->gambar) }});">
-                            </div>
-                        </div>
-                        <p class="text-center">Alumni</p>
-                        <div class="card-alumni">
-                            <h4 class="title-alumni">{{ $item->nama_alumni }}, A.Md</h4>
-                            <h3 class="title-work mb-1">Bekerja Sebagai {{ $item->tempat_bekerja }}</h3>
-                        </div>
-                        <div class="video text-center">
-                            <a class="icon-video venobox" href="{{ $item->link }}" data-vbtype="video">
-                                <i class="fas fa-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                @endforeach
+    
                 <!-- course item -->
             </div>
             <!-- /course list -->
         </div>
     </section>
-    <!-- /Alumni --> --}}
 
     <!-- Video -->
     <section class="section-sm">

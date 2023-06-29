@@ -18,9 +18,9 @@ class UsersTableSeeder extends Seeder
         $users = [[
             'id'                    => 1,
             'name'                  => 'Admin 1',
-            'email'                 => 'admin@gmail.com',
+            'email'                 => 'bagus@gmail.com',
             'email_verified_at'     => NULL,
-            'password'              => '$2y$10$hZ1a0cYBH52Oav56uT0qpuE4SyN6Q0QkmtqeH4f1pY5i5qzej/R4O',
+            'password'              => '$2a$12$t9Q8GqJzDlfWJ8Azl3yTzOZvrXHlck1KQDbQY3EisaI.974yugcA.',
             'role_id'               => 1,
             'picture'          => 'images/users/default.jpg',
             'remember_token'        => null,

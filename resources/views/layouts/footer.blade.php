@@ -8,10 +8,6 @@
                     <div class="ms-1">
                         <div class="sm-head">
                             <i class="fas fa-angle-right"></i>
-                            <p>Kalender Akademik</p>
-                        </div>
-                        <div class="sm-head">
-                            <i class="fas fa-angle-right"></i>
                             <p>Pnduan Magang</p>
                         </div>
                         <div class="sm-head">
